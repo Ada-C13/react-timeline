@@ -4,8 +4,18 @@ import './App.css';
 import timelineData from './data/timeline.json';
 import Timeline from './components/Timeline';
 
+const timelinePosts = timelineData.events.map((event) => {
+  return (
+    {
+      person: event.person,
+      status: event.status,
+      timeStamp: event.timeStamp
+    }
+  );
+});
+
 function App() {
-  console.log(timelineData);
+  console.log(timelinePosts);
 
   // Customize the code below
   return (
@@ -14,6 +24,7 @@ function App() {
         <h1 className="App-title">Application title</h1>
       </header>
       <main className="App-main">
+        <Timeline events={timelinePosts}/>
       </main>
     </div>
   );
