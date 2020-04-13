@@ -2,9 +2,16 @@ import React from 'react';
 import './TimelineEvent.css';
 import Timestamp from './Timestamp';
 
-const TimelineEvent = () => {
+const TimelineEvent = (props) => {
   
-  return;
+  return(
+    <ul>
+      <li>Person: {props.person}</li>
+      <li>Status: {props.status}</li>
+      <li>Time: {props.timestamp}</li>
+    </ul>
+  );
+
 }
 
 export default TimelineEvent;
