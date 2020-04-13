@@ -4,8 +4,6 @@ import timelineData from './data/timeline.json';
 import Timeline from './components/Timeline';
 
 function App() {
-  console.log(timelineData);
-
   // Customize the code below
   return (
     <div className="App">
