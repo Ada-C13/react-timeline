@@ -1,15 +1,12 @@
 import React from 'react';
 import './TimelineEvent.css';
-import Timestamp from './Timestamp';
 
 const TimelineEvent = (props) => {
   return(
-    <div className = "TimeLineEvent">
-      
-        <p>{props.person}</p>
-        <p>{props.status}</p>
-        <p>{props.timestamp}</p>
-      
+    <div className = "timeline-event">
+      <div className = "event-person"><strong>{props.person}</strong></div>
+      <div className = "event-status">{props.status}</div>
+      <div className = "event-time">{props.timeStamp}</div> 
     </div>
   );
 }
