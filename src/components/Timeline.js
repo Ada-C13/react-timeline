@@ -9,14 +9,14 @@ const Timeline = (prop) => {
       <TimelineEvent 
         person={event.person}
         status={event.status}
-        timestamp={event.TimeStamp}
-        key={event.TimeStamp}
+        timestamp={event.timeStamp}
+        key={event.timeStamp}
       />
     );
   });
 
   return(
-    <ul>
+    <ul className="Timeline">
       {events}
     </ul>
   )
