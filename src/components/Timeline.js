@@ -4,21 +4,22 @@ import TimelineEvent from './TimelineEvent';
 
 const Timeline = (props) => {
   
-  const timelineComponents = props.events.map( (event) => 
+  const timelineComponents = props.events.map( (event, index) => 
   {
     return (
       <TimelineEvent
         person={event.person}
         status={event.status}
-        timestamp={event.timestamp}
+        timeStamp={event.timeStamp}
+        key={index}
       />
     );
   });
 
   return (
-    <p className="Timeline timeline">
+    <main className="Timeline timeline">
       {timelineComponents}
-    </p>
+    </main>
   );
 }
 
