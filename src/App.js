@@ -18,7 +18,7 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <h1 className="App-title">Not-Twitter</h1>
+        <h1 className="App-title">Not-Twitter for {timelineData.person}</h1>
       </header>
       <main className="App-main">
         <Timeline events={timelinePosts}/>

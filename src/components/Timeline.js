@@ -8,16 +8,20 @@ const Timeline = (events) => {
 
     return(
       <TimelineEvent
-        person = {event.person}
-        status = {event.status}
-        timestamp = {event.timestamp}
-        key = {event.status}
+        person={event.person}
+        status={event.status}
+        timeStamp={event.timeStamp}
+        key={event.status}
       />
     );
 
   });
 
-  return eventComponents;
+  return (
+    <section class="timeline">
+      {eventComponents}
+    </section>
+  );
 }
 
 export default Timeline;
