@@ -4,32 +4,44 @@
     {
       "person": "Adele Goldberg",
       "status": "In Smalltalk, everything happens somewhere else.",
-      "timeStamp": "2018-05-18T22:12:03Z"
+      "timeStamp": "2018-05-18T22:12:03Z",
+      "image": "https://images.computerhistory.org/revonline/images/500004457-03-01.jpg?w=600",
+      "alt": "Adele Goldberg smiling at the camera, posing for a portrait"
     },
     {
       "person": "Erica Baker",
       "status": "Every once in a while, life affords you the opportunity to have real, authentic, genuine happiness. It's up to you to see it. Pay attention.",
-      "timeStamp": "2018-05-18T22:19:40Z"
+      "timeStamp": "2018-05-18T22:19:40Z",
+      "image": "https://seejane.org/wp-content/uploads/bio-erica-baker.jpg",
+      "alt": "Erika Baker smiling and looking directly at the camera"
     },
     {
       "person": "Aubrey Tang",
       "status": "The art of computer programming is a blend of mathematics and poetry.",
-      "timeStamp": "2018-05-18T22:41:19Z"
+      "timeStamp": "2018-05-18T22:41:19Z",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e5/Audrey_Tang_in_2015_%28cropped%29.jpg/440px-Audrey_Tang_in_2015_%28cropped%29.jpg",
+      "alt": "Audrey Tang wearing a black shirt and glasses looking up towards the top of the photo"
     },
     {
       "person": "Julia Evans",
       "status": "no seriously what if we replaced tech books with informative concise 30 page zines though",
-      "timeStamp": "2018-05-18T23:02:44Z"
+      "timeStamp": "2018-05-18T23:02:44Z",
+      "image": "https://usesthis.com/images/interviews/julia.evans/portrait.jpg",
+      "alt": "Julia Evans wearing headphones around their neck and looking at a sticker-covered computer"
     },
     {
       "person": "Stephanie Hurlburt",
       "status": "I don’t think you can do good work if you’re not at least occasionally talking to a person you’re building for.",
-      "timeStamp": "2018-05-18T23:09:38Z"
+      "timeStamp": "2018-05-18T23:09:38Z",
+      "image": "https://res-3.cloudinary.com/crunchbase-production/image/upload/c_thumb,h_256,w_256,f_auto,g_faces,z_0.7,q_auto:eco/v1493697351/n81caoh7wrhfi2opahi0.png",
+      "alt": "Stephanie Hurlburt posing in front of an abstract painting"
     },
     {
       "person": "Yan Zhu",
       "status": "//for a good time, paste this into twitter page console: c=new AudioContext;n=setInterval(\"for(n+=7,i=k,P='▲.\\\n';i-=1/k;P+=P[i%2?(i%2*j-j+n/k^j)&1:2])j=k/i;doc.innerHTML=P;with(c.createOscillator())frequency.value=200*(j+n/k^j),connect(c.destination),start(),stop(n/k)\",k=64)",
-      "timeStamp": "2018-05-18T23:51:01Z"
+      "timeStamp": "2018-05-18T23:51:01Z",
+      "image": "https://www.scmagazine.com/wp-content/uploads/sites/2/2018/07/0715fyanzhu_787726_787727.jpg",
+      "alt": "Yan Zhu wearing a tie, glasses, and with awesome green hair"
     }
   ]
 }

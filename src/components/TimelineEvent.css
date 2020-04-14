@@ -30,7 +30,10 @@
 
 .event-image {
   grid-area: 1 / 1 / span 3 / span 1;
-  place-self: center;
-  /* box-shadow:  3px 3px 5px grey; */
+  max-width: 100px;
+  align-self: start;
+  justify-self: center;
+  margin-top: 0.5rem;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
+
