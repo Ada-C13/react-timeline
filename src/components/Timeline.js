@@ -18,7 +18,7 @@ const Timeline = (events) => {
   });
 
   return (
-    <section class="timeline">
+    <section className="timeline">
       {eventComponents}
     </section>
   );
