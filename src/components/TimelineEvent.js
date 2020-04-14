@@ -2,20 +2,21 @@ import React from 'react';
 import './TimelineEvent.css';
 import Timestamp from './Timestamp';
 
-const TimelineEvent = () => {
+const TimelineEvent = (props) => {
+  console.log(props);
   
   return(
     <div className="timeline-event">
       <div className="event-person">
-        <p>Adele Goldberg</p>
+        <p>{props.person}</p>
       </div>
 
       <div className="event-status">
-        <p>In Smalltalk, everything happens somewhere else.</p>
+        <p>{props.status}</p>
       </div>
 
       <div className="event-time">
-        <Timestamp time="2018-05-18T22:12:03Z"/>
+        <Timestamp time={props.timeStamp}/>
       </div>
     </div>
   );
