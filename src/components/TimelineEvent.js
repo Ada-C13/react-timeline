@@ -1,6 +1,7 @@
 import React from 'react';
 import './TimelineEvent.css';
 import Timestamp from './Timestamp';
+import PropTypes from 'prop-types';
 
 const TimelineEvent = (props) => {
   return (
@@ -12,5 +13,12 @@ const TimelineEvent = (props) => {
     </div>
   );
 }
+
+TimelineEvent.propTypes= {
+  person: PropTypes.string,
+  status: PropTypes.string,
+  // https://github.com/facebook/react/issues/5143
+  timeStamp: PropTypes.elementType,
+} 
 
 export default TimelineEvent;
