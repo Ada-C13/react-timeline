@@ -7,19 +7,17 @@ import TimelineEvent from './components/TimelineEvent';
 
 function App() {
   console.log(timelineData);
-
+  console.log("hello!");
+  console.log(timelineData.events);
 
 
   return (
     <div className="App">
       <header className="App-header">
-        <h1 className="App-title">Tina's Social Media Feed</h1>
+        <h1 className="App-title">{timelineData.person}'s Social Media Feed</h1>
       </header>
       <main className="App-main">
-        <TimelineEvent person="Becca" status="Hacking away at Ada projects"/>
-        <TimelineEvent person="Henry" status="Grocery shopping and meal prep"/>
-        {/* <Timeline events={timelineData.events}/> */}
-
+        <Timeline events={timelineData.events}/>
       </main>
     </div>
   );
