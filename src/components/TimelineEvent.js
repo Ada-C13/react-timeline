@@ -5,12 +5,12 @@ import Timestamp from './Timestamp';
 const TimelineEvent = (props) => {
   
   return(
-    <div className="TimelineEvent timeline-event timeline-event:hover">
+    <section className="TimelineEvent timeline-event timeline-event:hover">
       <h3 className="event-person">{props.person}</h3>
-      <Timestamp time={props.timeStamp} className="event-time" />
+      <Timestamp time={props.timeStamp}  />
       <p className="event-status">{props.status}</p>
-    </div>
-  ) ;
-}
+    </section>
+  );
+};
 
 export default TimelineEvent;
