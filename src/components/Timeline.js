@@ -3,7 +3,7 @@ import './Timeline.css';
 import TimelineEvent from './TimelineEvent';
 
 const Timeline = (props) => {
-  const events = props.data.map((event, i) => {
+  const events = props.events.map((event, i) => {
     return(
       <div key={i}>
         <TimelineEvent 

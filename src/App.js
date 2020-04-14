@@ -11,7 +11,7 @@ function App() {
       </header>
       <main className="App-main">
       <div className="TimelineEvent">
-        <Timeline data={timelineData.events}/>
+        <Timeline events={timelineData.events}/>
       </div>
       </main>
     </div>
