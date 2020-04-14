@@ -3,6 +3,7 @@ import logo from './logo.svg';
 import './App.css';
 import timelineData from './data/timeline.json';
 import Timeline from './components/Timeline';
+import TimelineEvent from './components/TimelineEvent'; 
 
 const feed = [
   {
@@ -29,9 +30,11 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <h1 className="App-title">Application title</h1>
+        <h1 className="App-title">Friends Feed</h1>
       </header>
       <main className="App-main">
+        <TimelineEvent person={feed[0].person} status={feed[0].status} timestamp={feed[0].timeStamp}/>
+        <TimelineEvent person={feed[1].person} status={feed[1].status} timestamp={feed[1].timeStamp}/>
       </main>
     </div>
   );
