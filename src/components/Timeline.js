@@ -3,7 +3,7 @@ import './Timeline.css';
 import TimelineEvent from './TimelineEvent';
 
 const Timeline = (props) => {
-  const eventColevtion = props.events.map((event, i) => {
+  const eventColection = props.events.map((event, i) => {
     return(
     <TimelineEvent
     person = {event.person}
@@ -15,7 +15,7 @@ const Timeline = (props) => {
 
   return(
     <ul className = "timeline">
-      {eventColevtion}
+      {eventColection}
     </ul>
   )
 };
