@@ -41,7 +41,7 @@
 .like-button {
   grid-area: 3 / 3 / span 1 / span 1;
   text-align: center;  
-  place-self: center;
+  place-self: end;
   width: 75px;
   background: #ed2553;
   border-radius: 3px;
