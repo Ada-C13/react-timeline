@@ -22,7 +22,13 @@ const Timeline = (props) => {
 }
 
 Timeline.propTypes = {
-  events: PropTypes.array.isRequired
+  events: PropTypes.arrayOf(
+    PropTypes.shape({
+      person: PropTypes.string.isRequired,
+      status: PropTypes.string,
+      timeStamp: PropTypes.string.isRequired
+    })
+  )
 }
 
 export default Timeline;
