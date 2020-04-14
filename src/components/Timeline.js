@@ -4,15 +4,23 @@ import TimelineEvent from './TimelineEvent';
 
 const Timeline = (props) => {
 
+  const events = props.data.map((event, index) => {
+    return (
+      <li key={index}>
+        <TimelineEvent 
+          person={event.person}
+          status={event.status}
+          timestamp={event.timestamp}
+        />
+      </li>
+
+    )
+  });
+
   
   return(
-    <TimelineEvent 
-      person="Minnie Mouse" 
-      status="I love you Mickey Mouse"
-      timestamp="April 14, 2020"
-
-    />
+    <ul className='timeLine'> {events} </ul>
   );
-};
+}
 
 export default Timeline;
