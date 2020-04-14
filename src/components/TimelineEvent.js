@@ -3,7 +3,6 @@ import './TimelineEvent.css';
 import Timestamp from './Timestamp';
 
 const TimelineEvent = (props) => {
-  console.log(props);
   
   return(
     <div className="timeline-event">
