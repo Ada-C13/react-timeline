@@ -2,4 +2,9 @@
   width: 30%;
   margin: auto;
   text-align: left;
+  font-family: "Lucida Console", Courier, monospace;
+}
+
+.timeline, ul {
+  list-style-type: none;
 }

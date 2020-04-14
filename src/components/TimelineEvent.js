@@ -3,12 +3,12 @@ import './TimelineEvent.css';
 import Timestamp from './Timestamp';
 
 const TimelineEvent = (props) => {
-  
   return (
-    <div className='event'>
-      <h2 className='person'>Leah Hughes</h2>
-      <p className='status'>I'm learning how to do some React stuff here.</p>
-      <p className='time'>Here is a timestamp: YOUR TIMESTAMP MAGICALLY APPEARS HERE SOMEHOW.</p>
+    <div className='timeline-event'>
+      <img className='event-image' src='https://via.placeholder.com/100x125'></img>
+      <h3 className='event-person'>{props.person}</h3>
+      <h3 className='event-status'>{props.status}</h3>
+      <h3 className='event-time'><Timestamp time={props.timeStamp} /></h3>
     </div>
   );
 }
