@@ -2,18 +2,27 @@
   display: grid;
   grid-template: 2rem auto 2rem / 1fr 1fr;
   padding: 0.5rem;
-  border-bottom: 1px solid #E6ECF0;
+  border: 1px solid #E6ECF0;
   background-color: #FFF;
+  color: rgb(30, 30, 30);
 }
 
 .timeline-event:hover {
-  background-color: #F5F8FA;
+  background-color: rgb(174, 200, 218);
+  color: lightgoldenrodyellow;
 }
 
 .event-person {
   grid-area: 1 / 1 / span 1 / span 1;
   margin-top: 0.5rem;
   font-weight: bolder;
+  font-size: 1.2rem;
+  color: royalblue;
+  text-decoration: underline;
+}
+
+.event-person:hover {
+  color: indianred;
 }
 
 .event-status {
@@ -24,4 +33,5 @@
   grid-area: 1 / 2 / span 1 / span 1;
   margin-top: 0.5rem;
   text-align: right;
+  font-style: italic;
 }
