@@ -37,3 +37,28 @@
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
+/* modified from https://codepen.io/emilandersson/pen/rWwvwq */
+.like-button {
+  grid-area: 3 / 3 / span 1 / span 1;
+  text-align: center;  
+  place-self: center;
+  width: 75px;
+  background: #ed2553;
+  border-radius: 3px;
+  box-shadow: 0 10px 20px -8px rgb(240, 75, 113);
+  padding: 10px 10px;
+  font-size: 13px;
+  font-family: monospace;
+  cursor: pointer;
+  border: none;
+  outline: none;
+  color: #ffffff;
+  text-decoration: none;
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
+}
+
+
+.like-button:hover {
+  transform: translateY(-3px);
+}
