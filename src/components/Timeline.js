@@ -1,16 +1,16 @@
 import React from 'react';
 import './Timeline.css';
 import TimelineEvent from './TimelineEvent';
-// import timelineData from './data/timeline.json';
+import PropTypes from 'prop-types';
 
 const Timeline = (props) => {
-  const timeLineComponents = props.events.map((element, i)=>{
+  const timeLineComponents = props.events.map((event, i)=>{
     return(
       <div key = {i}>
         <TimelineEvent
-          person = {element.person}
-          status = {element.status}
-          timeStamp = {element.timeStamp}
+          person = {event.person}
+          status = {event.status}
+          timeStamp = {event.timeStamp}
         />
     </div>
     );
@@ -23,4 +23,11 @@ const Timeline = (props) => {
   );
 }
 
+Timeline.propTypes = {
+  events: PropTypes.arrayOf(PropTypes.shape({
+    person: PropTypes.string.isRequired,
+    status: PropTypes.string.isRequired,
+    timeStamp: PropTypes.string.isRequired
+  }))
+};
 export default Timeline;
