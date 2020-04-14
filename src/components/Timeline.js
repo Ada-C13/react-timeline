@@ -4,7 +4,12 @@ import TimelineEvent from './TimelineEvent';
 
 const Timeline = () => {
   
-  return;
+  // build map here
+  //const timelineevent => returns event components
+
+  return (
+    <div></div>
+  )
 }
 
 export default Timeline;
