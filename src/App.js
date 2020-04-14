@@ -2,7 +2,6 @@ import React from 'react';
 import './App.css';
 import timelineData from './data/timeline.json';
 import Timeline from './components/Timeline';
-import './components/Timeline.css';
 
 const events = timelineData.events
 
