@@ -5,7 +5,7 @@ import TimelineEvent from './TimelineEvent';
 const Timeline = (props) => {
   const TimelineComponents = props.events.map(event => {
     return (
-      <TimelineEvent key={event.id}
+      <TimelineEvent key={event.timeStamp}
         person={event.person} 
         status={event.status}
         timestamp={event.timeStamp}
@@ -14,10 +14,23 @@ const Timeline = (props) => {
   });
 
   return (
-    <section className="timeline">
+    <div className="timeline">
       { TimelineComponents }
-    </section>
+    </div>
   );
 }
 
 export default Timeline;
+
+// const events = props.data.map((event, i) => {
+//   return (
+//     <li key={i}>
+//       <TimelineEvent person={event.person} status={event.status} timeStamp={event.timeStamp}/> 
+//     </li>
+//   )
+
+// });
+
+// return (
+//   <ul className='timeline'> {events} </ul>
+// ); 

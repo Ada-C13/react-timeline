@@ -11,7 +11,8 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <h1 className="App-title">Application title</h1>
+        <img className="logo" src={logo}/>
+        <h1 className="App-title">Computer Time(line)</h1>
       </header>
       <main className="App-main">
         <Timeline events={timelineData.events}/>
