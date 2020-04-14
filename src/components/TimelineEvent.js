@@ -20,6 +20,8 @@ TimelineEvent.propTypes= {
   status: PropTypes.string,
   // https://github.com/facebook/react/issues/5143
   timeStamp: PropTypes.elementType,
+  image: PropTypes.string,
+  alt: PropTypes.string
 } 
 
 export default TimelineEvent;
