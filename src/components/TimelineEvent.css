@@ -22,7 +22,8 @@
   border: solid 2pt black;
   background-color: lightblue;
   padding: 1rem;
-  border-radius: 2rem;
+  border-top-left-radius: 2rem;
+  border-bottom-right-radius: 2rem;
 }
 
 .event-time {
