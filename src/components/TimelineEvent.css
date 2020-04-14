@@ -1,4 +1,4 @@
-.timeline-event {
+.TimelineEvent {
   display: grid;
   grid-template: 2rem auto 2rem / 1fr 1fr;
   padding: 0.5rem;
@@ -6,21 +6,21 @@
   background-color: #FFF;
 }
 
-.timeline-event:hover {
+.TimelineEvent:hover {
   background-color: #F5F8FA;
 }
 
-.event-person {
+.TimelineEvent h2 {
   grid-area: 1 / 1 / span 1 / span 1;
   margin-top: 0.5rem;
   font-weight: bolder;
 }
 
-.event-status {
+.TimelineEvent p {
   grid-area: 2 / 1 / span 1 / -1;
 }
 
-.event-time {
+.TimelineEvent footer {
   grid-area: 1 / 2 / span 1 / span 1;
   margin-top: 0.5rem;
   text-align: right;
