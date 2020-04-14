@@ -4,7 +4,7 @@ import timelineData from './data/timeline.json';
 import Timeline from './components/Timeline';
 
 function App() {
-  return (
+  return(
     <div className="App">
       <header className="App-header">
         <h1 className="App-title">Ada Lovelace's Social Media Feeds</h1>
