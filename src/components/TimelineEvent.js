@@ -7,9 +7,9 @@ const TimelineEvent = (props) => {
   return(
   <div >
     <ul className = "timeline-event">
-    <li className = "event-person" ><strong>{props.person}</strong></li>
+      <li className = "event-person" ><strong>{props.person}</strong></li>
       <li className = "event-status">{props.status}</li>
-      <li className = "event-time">{Timestamp(props.timestamp)}</li>
+      <li className = "event-time"><Timestamp time = {props.timestamp}/></li>
     </ul>
   </div>
   );
