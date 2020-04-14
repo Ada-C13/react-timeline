@@ -7,7 +7,7 @@ function App() {
   return(
     <div className="App">
       <header className="App-header">
-        <h1 className="App-title">Ada Lovelace's Social Media Feeds</h1>
+        <h1 className="App-title">Ada Lovelace's Social Media Feed</h1>
       </header>
       <main className="App-main">
       <div className="TimelineEvent">
