@@ -6,7 +6,7 @@ import Timestamp from './Timestamp';
 const TimelineEvent = (props) => {
   return (
     <section className="timeline-event">
-      <p className="event-person">{props.person}</p>
+      <h2 className="event-person">{props.person}</h2>
       <p className="event-status">{props.status}</p>
       <time className="event-time">
         <Timestamp time={props.Timestamp}/>

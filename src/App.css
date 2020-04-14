@@ -21,7 +21,8 @@
 }
 
 .App-main {
-  padding-top: 7rem;
+  border: red solid;
+  padding-top: 40vh;
   background-color: #E6ECF0;
 }
 

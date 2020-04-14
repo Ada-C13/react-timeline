@@ -1,4 +1,5 @@
 .timeline-event {
+  border: red solid;
   display: grid;
   grid-template: 2rem auto 2rem / 1fr 1fr;
   padding: 0.5rem;
