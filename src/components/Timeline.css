@@ -1,7 +1,6 @@
 .timeline {
-  width: 30%;
+  width: 50%;
   margin: auto;
-  
-
-  
+  border-top: black solid;
+  border-bottom: black solid;
 }
