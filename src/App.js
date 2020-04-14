@@ -7,7 +7,7 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <h1 className="App-title">Friends Feed</h1>
+        <h1 className="App-title">Friends Feed for {timelineData.person}</h1>
       </header>
       <main className="App-main">
         <Timeline events={timelineData.events} />
