@@ -8,14 +8,13 @@ import TimelineEvent from './components/TimelineEvent';
 function App() {
   console.log(timelineData);
 
-  // Customize the code below
   return (
     <div className="App">
       <header className="App-header">
         <h1 className="App-title">Application title</h1>
       </header>
       <main className="App-main">
-        <TimelineEvent person="Suely Barreto" status="learning" timestamp="04/13/2020 6:29 PM"/>
+        <Timeline events={ timelineData.events } />
       </main>
     </div>
   );
