@@ -3,6 +3,7 @@ import logo from './logo.svg';
 import './App.css';
 import timelineData from './data/timeline.json';
 import Timeline from './components/Timeline';
+import TimelineEvent from './components/TimelineEvent';
 
 function App() {
   console.log(timelineData);
@@ -14,6 +15,7 @@ function App() {
         <h1 className="App-title">Ada Lovelace's Social Media Feed</h1>
       </header>
       <main className="App-main">
+        <TimelineEvent />
       </main>
     </div>
   );
