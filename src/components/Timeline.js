@@ -7,15 +7,13 @@ const Timeline = (props) => {
   const events = props.events.map((event, i) => {
     return (
       <div key={i}>
-        <TimelineEvent person={event.person} status={event.status} timestamp={event.timeStamp}/>
+        <TimelineEvent person={event.person} status={event.status} time={event.timeStamp}/>
       </div>
     );
   });
 
   return (
-    <ul className="timeline">
-      {events}
-    </ul>
+    <div className="timeline">{events}</div>
   );
 };
 export default Timeline;
