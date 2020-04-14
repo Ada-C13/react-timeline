@@ -24,6 +24,7 @@
   padding: 1rem;
   border-top-left-radius: 2rem;
   border-bottom-right-radius: 2rem;
+  min-width: min-content;
 }
 
 .event-time {
