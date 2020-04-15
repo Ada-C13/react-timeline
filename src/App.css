@@ -1,9 +1,12 @@
+
 .App-header {
   background-color: #222;
   padding-bottom: 0.5rem;
   color: white;
   position: fixed;
   width: 100%;
+  z-index: 1;
+
 }
 
 .App-title {
@@ -14,4 +17,9 @@
 .App-main {
   padding-top: 7rem;
   background-color: #E6ECF0;
+  
+}
+
+.Ada-lovelace {
+  text-align: center;
 }
