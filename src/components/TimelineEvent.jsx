@@ -5,10 +5,10 @@ import { render } from "@testing-library/react";
 
 const TimelineEvent = (props) => {
   return (
-    <div className="TimelineEvent">
-      <h1>person</h1>
-      <h1>status</h1>
-      <h1>Timestamp</h1>
+    <div>
+      person = {props.event - person}
+      status = {props.event - status}
+      timestamp ={props.event - time}
     </div>
   );
 };
