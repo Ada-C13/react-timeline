@@ -1,8 +1,6 @@
 import React from 'react';
 import './Timeline.css';
 import TimelineEvent from './TimelineEvent';
-import Timestamp from './Timestamp.js';
-
 
 const Timeline = (events) => {
   const allPosts = events.events.map((post) => {
@@ -18,8 +16,8 @@ const Timeline = (events) => {
 
   return(
   <ul className="PostCollection">
-      {allPosts}
-    </ul>
+    {allPosts}
+  </ul>
   );
 }
 
