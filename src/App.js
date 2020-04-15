@@ -5,15 +5,15 @@ import timelineData from './data/timeline.json';
 import Timeline from './components/Timeline';
 
 function App() {
-  console.log(timelineData);
 
-  // Customize the code below
   return (
     <div className="App">
       <header className="App-header">
-        <h1 className="App-title">Application title</h1>
+        <img className="logo" src={logo} alt="React logo decoration"/>
+        <h3 className="App-title">{timelineData.person}'s Social Media Feed</h3>
       </header>
       <main className="App-main">
+        <Timeline className="timeline" events={timelineData.events}/>
       </main>
     </div>
   );
