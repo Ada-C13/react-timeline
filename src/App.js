@@ -8,13 +8,13 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <h1 className="App-title">Application title</h1> 
+        <h1 className="App-title">Ada Lovelace's Social Media Feed</h1> 
       </header>
       <main className="App-main">
-        <Timeline events={ timelineData.events } />
+        <Timeline events={timelineData.events} />
       </main>
     </div>
   );
 }
 
-export default App; // line 14 go check project description 
+export default App;

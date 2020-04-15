@@ -3,9 +3,9 @@ import './Timeline.css';
 import TimelineEvent from './TimelineEvent';
 
 const Timeline = (props) => {
-  const allEvents = props.events.map((event) => {
+  const allEvents = props.events.map((event, index) => {
     return (
-      <TimelineEvent person = {event.person} status = {event.status} timeStamp = {event.timeStamp}/>
+      <TimelineEvent key={index} person={event.person} status={event.status} timeStamp={event.timeStamp} />
     );
   });
   return allEvents;
