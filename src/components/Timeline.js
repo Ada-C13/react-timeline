@@ -3,12 +3,9 @@ import './Timeline.css';
 import TimelineEvent from './TimelineEvent';
 
 const Timeline = (props) => {
-  const events = props.events;
-  const timelineEvents = [];
-  
-  events.forEach(event => {
-    timelineEvents.push(<TimelineEvent person={event.person} status={event.status} timeStamp={event.timeStamp} />);
-  });
+  const timelineEvents = props.events.map(event => 
+  <TimelineEvent person={event.person} status={event.status} timeStamp={event.timeStamp} />
+  );
   
   return (
     <section className="timeline">
