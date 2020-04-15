@@ -6,8 +6,11 @@ const Timestamp = (props) => {
   const absolute = time.format('MMMM Do YYYY, h:mm:ss a');
   const relative = time.fromNow();
 
+
   return (
+    <div>
     <span title={absolute}>{relative}</span>
+    </div>
   );
 };
 
