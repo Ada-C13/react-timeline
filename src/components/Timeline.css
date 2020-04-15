@@ -1,5 +1,15 @@
 .timeline {
-  width: 80%;
+  width: 40%;
   margin: auto;
   text-align: left;
+  
+}
+
+.timeline li {
+  list-style-type: none;
+
+}
+
+.event-status {
+  word-wrap: break-word;
 }
