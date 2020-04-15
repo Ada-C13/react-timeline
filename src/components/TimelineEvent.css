@@ -17,6 +17,7 @@
 }
 
 .event-status {
+  word-wrap: break-word;
   grid-area: 2 / 1 / span 1 / -1;
   max-width: 500px;
 }
