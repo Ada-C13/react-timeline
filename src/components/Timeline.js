@@ -12,8 +12,9 @@ const Timeline = (props) => {
         key = {item.timeStamp}
         person = {item.person}
         status = {item.status}
-        time = {item.timeStamp} /> );
-    },
+        time = {item.timeStamp} />
+        );
+    }
   );
 
   return (
