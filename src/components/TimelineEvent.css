@@ -1,6 +1,6 @@
 .timeline-event {
   display: grid;
-  grid-template: 2rem auto 2rem / 1fr 1fr;
+  grid-template: 3rem auto 2rem / 8fr 8fr;
   padding: 0.5rem;
   border-bottom: 1px solid #E6ECF0;
   background-color: #FFF;

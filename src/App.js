@@ -6,14 +6,14 @@ import Timeline from './components/Timeline';
 function App() {
   console.log(timelineData.events);
   return (
-    <div className="App">
+    <section className="App">
       <header className="App-header">
         <h1 className="App-title">{`${timelineData.person}'s Social Media Feed`}</h1>
       </header>
       <main className="App-main">
         <Timeline events={timelineData.events}/>
       </main>
-    </div>
+    </section>
   );
 }
 
