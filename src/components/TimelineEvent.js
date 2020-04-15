@@ -6,10 +6,10 @@ import PropTypes from 'prop-types';
 const TimelineEvent = (props) => {
   
   return (
-    <section className="timelineEvent">
-      <h1 className="person"> {props.person}</h1>
-      <p className="eventStatus">{props.status}</p>
-      <time className="timeStamp">
+    <section className="timeline-event">
+      <h1 className="event-person"> {props.person}</h1>
+      <p className="event-status">{props.status}</p>
+      <time className="event-time">
         <Timestamp time={props.timeStamp}/>
       </time>
     </section>

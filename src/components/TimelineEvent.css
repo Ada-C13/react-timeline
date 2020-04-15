@@ -2,8 +2,8 @@
   display: grid;
   grid-template: 2rem auto 2rem / 1fr 1fr;
   padding: 0.5rem;
-  border-bottom: 1px solid #E6ECF0;
-  background-color: #FFF;
+  border-bottom: 1px solid rgb(255, 255, 255);
+  background-color: rgb(203, 190, 233);
 }
 
 .timeline-event:hover {

@@ -17,7 +17,7 @@ const Timeline = (props) => {
   });
 
   return (
-    <main className='Timeline'>
+    <main className='timeline'>
       {TimelineComps}
     </main>
   );
