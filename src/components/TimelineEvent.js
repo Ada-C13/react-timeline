@@ -2,13 +2,13 @@ import React from 'react';
 import './TimelineEvent.css';
 import Timestamp from './Timestamp';
 
-const TimelineEvent = (props) => {
+const TimelineEvent = (event) => {
   
   return(
     <section className="timeline-event">
-      <oi className="event-person">{props.person}</oi>
-      <oi className="event-status">{props.status}</oi>
-      <oi className="event-time"><Timestamp time={props.timeStamp} /></oi>
+      <oi className="event-person">{event.person}</oi>
+      <oi className="event-status">{event.status}</oi>
+      <oi className="event-time"><Timestamp time={event.timeStamp}/></oi>
     </section>
   );
 
