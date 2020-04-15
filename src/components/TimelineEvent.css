@@ -4,6 +4,7 @@
   padding: 0.5rem;
   border-bottom: 1px solid #E6ECF0;
   background-color: #FFF;
+  border-radius: 5px;
 }
 
 .timeline-event:hover {
@@ -18,10 +19,16 @@
 
 .event-status {
   grid-area: 2 / 1 / span 1 / -1;
+  overflow-wrap: break-word;
 }
 
 .event-time {
   grid-area: 1 / 2 / span 1 / span 1;
   margin-top: 0.5rem;
   text-align: right;
+}
+
+.event-likes {
+  grid-area: 3 / 1 / span 1 / -1;
+  margin: 5px 0;
 }
