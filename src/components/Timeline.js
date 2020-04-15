@@ -5,14 +5,16 @@ import TimelineEvent from './TimelineEvent';
 const Timeline = (props) => {
   const Timelinecomponents = props.events.map((event) =>{
     return(
-    <div>
- <TimelineEvent person={event.person} status={event.status} timeStamp={event.timeStamp}/>
-    </div> 
+      <TimelineEvent 
+      key={event.timeStamp}
+      person={event.person} 
+      status={event.status} 
+      timeStamp={event.timeStamp}/>
     );
   });
   
   return(
-    <ul className="event-collection">
+    <ul className="event-collection timeline">
     {Timelinecomponents}
   </ul>
   )
