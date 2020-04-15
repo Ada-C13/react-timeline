@@ -1,8 +1,10 @@
 import React from 'react';
 import './Timeline.css';
+import PropTypes from 'prop-types';
 import TimelineEvent from './TimelineEvent';
 
 const Timeline = (props) => {
+  console.log(props);
 
   const events = props.data.map((event, index) => {
     return (
@@ -22,5 +24,8 @@ const Timeline = (props) => {
     <div className='timeLine'> {events} </div>
   );
 }
+Timeline.propTypes = {
+  events: PropTypes.arrayOf(PropTypes.object)
+};
 
 export default Timeline;
