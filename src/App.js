@@ -4,7 +4,6 @@ import timelineData from './data/timeline.json';
 import Timeline from './components/Timeline';
 
 function App() {
-  console.log(timelineData.events);
   return (
     <section className="App">
       <header className="App-header">
