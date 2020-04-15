@@ -18,8 +18,6 @@ const Timeline = (props) => {
   );
 };
 
-export default Timeline;
+export default Timeline; 
 
-/* <TimelineEvent person="Sara" status="Hi there" timestamp="1 day ago" />
-<TimelineEvent person="Ben" status="I'm ben" timestamp="1 day ago" />
-<TimelineEvent person="Sara" status="Hi there" timestamp="1 day ago" /> */
+
