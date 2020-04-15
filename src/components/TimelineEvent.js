@@ -1,23 +1,16 @@
 import React from 'react';
 import './TimelineEvent.css';
-// import Timestamp from './Timestamp';
+import Timestamp from './Timestamp';
 
 const TimelineEvent = (props) => {
-  const timelineComponents = props.events.map((event,) => {
-    return (
-      <TimelineEvent
-        person={event.person}
-        status={event.status}
-        timeStamp={event.timeStamp}
-        
-      />
-    );
-  });
-  return(
-    <main className="Timeline timeline">
-    {timelineComponents}
-    </main>
+  return (
+  <div className="timeline-event">
+    <h2 className="event-person">{props.person}</h2>
+    <p className="event-status">{props.status}</p>
+      {/*Kaida helped fix the time={props.time} duirng roundtable*/}
+    <p className="event-time"> <Timestamp time={props.Timestamp}/></p>
+  </div>
   );
 };
 
-export default TimelineEvent;
+export default TimelineEvent; 
