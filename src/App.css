@@ -8,7 +8,7 @@
 
 .App-title {
   text-align: center;
-  font-size: 1.5em;
+  font-size: 2em;
   font-family: papyrus;
   color: rgb(102, 4, 79)
 }
@@ -21,12 +21,23 @@
   background-color: pink;
 }
 
+
+/* know they should probably be in another css file but i'm lazy */
 .Timeline-name {
-  font-family: papyrus
+  font-family: papyrus;
+  color: white;
+  font-size: 30px;
 }
 
 .Timeline-status {
   font-size: 24px;
-  color: white;
+  padding-left: 50px;
+  color: rgb(69, 67, 67);
   font-family: 'Times New Roman', Times, serif;
+}
+
+.Timeline-timestamp {
+  color: gray;
+  font-size: 10px;
+  padding-left: 800px;
 }
