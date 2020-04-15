@@ -9,10 +9,11 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <h1 className="App-title">{timelineData.person}'s Social Media Feed</h1>
+        <img className="logo" src={logo} alt="React logo decoration"/>
+        <h3 className="App-title">{timelineData.person}'s Social Media Feed</h3>
       </header>
       <main className="App-main">
-        <Timeline events={timelineData.events}/>
+        <Timeline className="timeline" events={timelineData.events}/>
       </main>
     </div>
   );
