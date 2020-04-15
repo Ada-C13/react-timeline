@@ -3,15 +3,16 @@
   padding-bottom: 0.5rem;
   color: white;
   position: fixed;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
   width: 100%;
 }
 
 .App-title {
   text-align: center;
-  font-size: 1.5em;
+  font-size: 2em;
 }
 
 .App-main {
   padding-top: 7rem;
-  background-color: #E6ECF0;
+  background-color: rgb(255, 255, 255);
 }
