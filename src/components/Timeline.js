@@ -10,12 +10,13 @@ const Timeline = (props) => {
       person={event.person}
       status={event.status}
       timeStamp={event.timeStamp}
+      key = {event.timeStamp}
       />
     );
   });
 
   return(
-    <div className="Timeline" class="timeline">
+    <div className="Timeline timeline">
       {allEvents}
     </div>
   );
