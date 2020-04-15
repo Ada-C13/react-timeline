@@ -3,14 +3,15 @@ import './Timeline.css';
 import TimelineEvent from './TimelineEvent';
 
 const Timeline = (props) => {
-  const events = props.eventsData.map((event)=> {
+  const events = props.eventsData.map((event, i)=> {
     return(
-      <TimelineEvent
-        person={event.person}
-        status={event.status}
-        timeStamp={event.timeStamp}
-        key={event.person}
-      />
+      <li key={i}>
+        <TimelineEvent
+          person={event.person}
+          status={event.status}
+          timeStamp={event.timeStamp}
+        />
+      </li>
     );
   });
   return(
