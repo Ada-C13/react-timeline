@@ -12,7 +12,7 @@ const TimelineEvent = (props) => {
       </p>
       <p className="event-status">{props.status}</p>
     </article>
-  );
+  )
 }
 
 export default TimelineEvent;
