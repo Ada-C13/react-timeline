@@ -5,6 +5,7 @@
   border: 1px solid #E6ECF0;
   background-color: #FFF;
   color: rgb(30, 30, 30);
+  overflow-wrap: break-word;
 }
 
 .timeline-event:hover {
