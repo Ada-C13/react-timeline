@@ -1,16 +1,20 @@
 .timeline-event {
   display: grid;
   grid-template: 2rem auto 2rem / 1fr 1fr;
-  margin-top: 0.5rem;
   padding: 0.5rem 1.5rem;
   border: 1px solid #e7e247; 
   border-radius: 0.5rem;
   background-color: #15202b;
+  list-style: none;
 }
 
 .timeline-event:hover {
   background-color: #1d2833;
   transition: background-color .5s ease-in-out;
+}
+
+.timeline-event:last-child {
+  margin-bottom: 0;
 }
 
 .event-person {
@@ -22,6 +26,8 @@
 
 .event-status {
   grid-area: 2 / 1 / span 1 / -1;
+  margin-top: 1rem;
+  overflow-wrap: break-word;
   color: #fff;
 }
 
@@ -29,5 +35,6 @@
   grid-area: 1 / 2 / span 1 / span 1;
   margin-top: 0.5rem;
   text-align: right;
+  font-style: italic;
   color: #404d59;
 }
