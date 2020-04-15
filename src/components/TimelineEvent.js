@@ -10,7 +10,7 @@ const TimelineEvent = (props) => {
       <h3 className='event-person'>{ props.person }</h3>
       <h3 className='event-status'>{ props.status }</h3>
       <h3 className='event-time'><Timestamp time={ props.timeStamp } /></h3>
-      <button className='like-button'>💜 Like</button>
+      <button className='like-button'><span role="img" aria-label="purple heart">💜</span> Like</button>
     </div>
   );
 }

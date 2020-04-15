@@ -7,8 +7,6 @@ import Timeline from './components/Timeline';
 function App() {
   console.log(timelineData);
 
-  // Set data(props) equal to a variable before the component can read it
-  // The variable is how the component will know how to read it and format it when it comes back up
   return (
     <div className="App">
       <header className="App-header">
