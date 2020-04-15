@@ -10,6 +10,7 @@ const Timeline = (props) => {
         person={event.person}
         status={event.status} 
         timestamp={event.timeStamp}
+        key={event.person}
       />
     );
   });
