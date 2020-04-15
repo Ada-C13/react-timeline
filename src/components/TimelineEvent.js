@@ -6,10 +6,10 @@ const TimelineEvent = (props) => {
   return (
     <ul key={props.timeStamp} className="timeline-event">
       <li className="event-person">
-        {props.person}
+        <span>{props.person}</span>
       </li>
       <li className="event-status">
-        {props.status}
+        <span>{props.status}</span>
       </li>
       <li className="event-time">
         <Timestamp time={props.timeStamp} />
