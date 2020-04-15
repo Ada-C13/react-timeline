@@ -6,20 +6,20 @@ const Timeline = (props) => {
 
   const events = props.data.map((event, index) => {
     return (
-      <li key={index}>
+      <section key={index}>
         <TimelineEvent 
           person={event.person}
           status={event.status}
-          timestamp={event.timestamp}
+          timeStamp={event.timeStamp}
         />
-      </li>
+      </section>
 
     )
   });
 
   
   return(
-    <ul className='timeLine'> {events} </ul>
+    <div className='timeLine'> {events} </div>
   );
 }
 
