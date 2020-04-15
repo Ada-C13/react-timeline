@@ -13,12 +13,13 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <h1 className="App-title">These are the times of your life...</h1>
+        <h1 className="App-title">{timelineData.person}'s timeline</h1>
       </header>
       <main className="App-main">
+        <Timeline events={timelineData.events} />
       </main>
     </div>
   );
-}
+};
 
 export default App;
