@@ -1,5 +1,6 @@
 import React from 'react';
 import moment from 'moment';
+import './TimelineEvent.css';
 
 const Timestamp = (props) => {
   const time = moment(props.time);
@@ -7,7 +8,7 @@ const Timestamp = (props) => {
   const relative = time.fromNow();
 
   return (
-    <span title={absolute}>{relative}</span>
+    <span className="Timeline-timestamp" title={absolute}>{relative}</span>
   );
 };
 
