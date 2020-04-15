@@ -6,9 +6,9 @@ import { render } from "@testing-library/react";
 const TimelineEvent = (props) => {
   return (
     <div>
-      person = {props.event - person}
-      status = {props.event - status}
-      timestamp ={props.event - time}
+      <Timestamp time={props.timestamp} />
+      <h3>person</h3>
+      <p>status</p>
     </div>
   );
 };
