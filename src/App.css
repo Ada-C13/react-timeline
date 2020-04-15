@@ -1,18 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Tamma+2&family=Bebas+Neue&display=swap');
+
 .App-header {
   background-color: #62d9c3;
   padding-bottom: 0.5rem;
   color:#262223;
   position: fixed;
-  width: 100%;
+  width: 14%;
+  top: 0;
+  font-family: "Bebas Neue", cursive
 }
 
 .App-title {
   text-align: center;
-  padding: 2.0rem;
+  padding: 0rem;
   font-size: 1.9em;
 }
 
 .App-main {
-  padding-top: 9rem;
+  padding: 5rem;
+  margin-top: 200px;
+  margin-left: 300px;
   background-color:#62d9c3;
+  font-family: "Baloo Tamma 2", cursive
 }

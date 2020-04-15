@@ -4,19 +4,25 @@ import timelineData from './data/timeline.json';
 import Timeline from './components/Timeline';
 import TimelineEvent from './components/TimelineEvent';
 
+const feedFodder = timelineData.events.map((event) => {
+  return (
+    {
+      person: event.person,
+      status: event.status,
+      timeStamp: event.timeStamp
+    }
+  );
+});
+
 function App() {
   console.log(timelineData);
   return (
     <div className="App">
       <header className="App-header">
-        <h1 className="App-title">{timelineData.person}'s Social Media Feed</h1>
+        <h1 className="App-title">{timelineData.person}'s Moment Feed</h1>
       </header>
       <main className="App-main">
-        <TimelineEvent
-        person="Charles Babbage"
-        status="Chaps, no one made 'em like Byron made 'em. #LoveladieFanClub"
-        timestamp="2020-10-31T23:58:42Z"
-        />
+        <Timeline events={feedFodder} />
       </main>
     </div>
   );
