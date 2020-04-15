@@ -5,7 +5,7 @@ import TimelineEvent from './TimelineEvent';
 
 const Timeline = (props) => {
   
-  // map over event props to return event components for each element
+  // map over event props to return TimelineEvent components for each element
   const timelineEventComponents = props.events.map((event) => {
     return (
       <TimelineEvent
