@@ -1,6 +1,6 @@
 import React from 'react';
 import moment from 'moment';
-import '../App.css';
+import './TimelineEvent.css';
 
 const Timestamp = (props) => {
   const time = moment(props.time);

@@ -25,3 +25,24 @@
   margin-top: 0.5rem;
   text-align: right;
 }
+
+.Timeline-name {
+  font-family: papyrus;
+  color: white;
+  font-size: 30px;
+}
+
+.Timeline-status {
+  font-size: 24px;
+  padding-left: 50px;
+  color: rgb(69, 67, 67);
+  font-family: 'Times New Roman', Times, serif;
+}
+
+/* I know this should be in a separate css but i'm lazy */
+
+.Timeline-timestamp {
+  color: gray;
+  font-size: 10px;
+  padding-left: 800px;
+}
