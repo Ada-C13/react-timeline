@@ -2,12 +2,13 @@ import React from 'react';
 import './TimelineEvent.css';
 import Timestamp from './Timestamp';
 
-const TimelineEvent = (props) => {
+// using destructuring to extract elements of props
+const TimelineEvent = ({person, timeStamp, status}) => {
   return (
     <div className="timeline-event">
-      <div className="event-person">{props.person}</div>
-      <div className="event-time"><Timestamp time={props.timestamp} /></div>
-      <div className="event-status">{props.status}</div>
+      <div className="event-person">{person}</div>
+      <div className="event-time"><Timestamp time={timeStamp} /></div>
+      <div className="event-status">{status}</div>
     </div>
   );
 }

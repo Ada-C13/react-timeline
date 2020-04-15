@@ -2,15 +2,13 @@ import React from 'react';
 import './Timeline.css';
 import TimelineEvent from './TimelineEvent';
 
-const Timeline = (props) => {
-  const timelineComponents = props.events.map((event, i) => {
+const Timeline = ({events}) => {
+  // const {events} = props; - destructuring
+  const timelineComponents = events.map((event, i) => {
     return (
-      <TimelineEvent
-        person={event.person}
-        timestamp={event.timestamp}
-        status={event.status}
-        key={i}
-      />
+      // used spread operator for event instad of using .key for retrieving each. 
+      // this is repacing lines 23-25
+      <TimelineEvent { ...event } key={event.timeStamp} />
     );
   });
   
@@ -20,5 +18,12 @@ const Timeline = (props) => {
     </div>
   ); 
 }
+
+{/* <TimelineEvent
+        person={event.person}
+        timeStamp={event.timeStamp}
+        status={event.status}
+        key={event.timeStamp}
+      /> */}
 
 export default Timeline;
