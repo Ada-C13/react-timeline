@@ -3,24 +3,15 @@ import './App.css';
 import timelineData from './data/timeline.json';
 import Timeline from './components/Timeline';
 
-const timelinePosts = timelineData.events.map((event) => {
-  return (
-    {
-      person: event.person,
-      status: event.status,
-      timeStamp: event.timeStamp
-    }
-  );
-});
-
 function App() {
+  console.log(timelineData.events);
   return (
     <div className="App">
       <header className="App-header">
         <h1 className="App-title">Not-Twitter for {timelineData.person}</h1>
       </header>
       <main className="App-main">
-        <Timeline events={timelinePosts}/>
+        <Timeline events={timelineData.events}/>
       </main>
     </div>
   );

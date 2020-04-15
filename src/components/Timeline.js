@@ -3,7 +3,7 @@ import './Timeline.css';
 import TimelineEvent from './TimelineEvent';
 
 const Timeline = (events) => {
-
+  console.log(events);
   const eventComponents = events.events.map((event) => {
 
     return(
