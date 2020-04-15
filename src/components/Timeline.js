@@ -6,7 +6,7 @@ const Timeline = (props) => {
  
   const TimelineComponents = props.events.map((events, i) =>{
     return(
-      <TimelineEvent
+      <TimelineEvent 
       name={events.person}
       status={events.status}
       timestamp={events.timeStamp}
@@ -17,10 +17,10 @@ const Timeline = (props) => {
 
 
   return (
-    <div>
+    <section className="timeline">
       {TimelineComponents}
-    </div>
+    </section>
   );
-}
+};
 
 export default Timeline;
