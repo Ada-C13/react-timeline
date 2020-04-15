@@ -11,7 +11,7 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-  <h1 className="App-title">{timelineData.person}</h1>
+  <h1 className="App-title">{timelineData.person} Ada Lovelace's Socail Media Feed</h1>
       </header>
       <main className="App-main">
         <Timeline times={timelineData.events}/>
