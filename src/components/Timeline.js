@@ -2,9 +2,19 @@ import React from 'react';
 import './Timeline.css';
 import TimelineEvent from './TimelineEvent';
 
-const Timeline = () => {
+const Timeline = (props) => {
+  const events = props.events;
+  const timelineEvents = [];
   
-  return;
-}
+  events.forEach(event => {
+    timelineEvents.push(<TimelineEvent person={event.person} status={event.status} timeStamp={event.timeStamp} />);
+  });
+  
+  return (
+    <section className="Timeline">
+      {timelineEvents}
+    </section>
+  );
+};
 
 export default Timeline;

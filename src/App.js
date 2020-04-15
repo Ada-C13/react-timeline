@@ -15,10 +15,10 @@ function App() {
         <h1 className="App-title">React Timeline</h1>
       </header>
       <main className="App-main">
-        <TimelineEvent person="Lee" status="Hello, World!" timestamp="April 14, 2020 8:25 PM" />
+        <Timeline events={timelineData.events} />
       </main>
     </div>
   );
-}
+};
 
 export default App;
