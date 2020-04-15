@@ -4,6 +4,18 @@ import Timestamp from './Timestamp';
 import PropTypes from 'prop-types';
 
 const TimelineEvent = (props) => {
+
+  // Practice event handling
+  const onStatusInputChange = (event) => {
+    const status = event.target.value; 
+
+    props.onUpdateEvent({
+      person: props.person,
+      timeStamp: props.timeStamp,
+      status,
+      id: props.id
+    });
+  };
   
   return (
     <section className="timeline-event">
@@ -11,7 +23,8 @@ const TimelineEvent = (props) => {
       <time className="event-time">
         <Timestamp time={ props.timeStamp }/>
       </time>
-      <p className="event-status">{ props.status}</p>
+      <p className="event-status">{ props.status }</p> 
+      <textarea placeholder="edit your status" value={ props.status } onChange={onStatusInputChange} />
     </section>
   );
 };
@@ -19,7 +32,8 @@ const TimelineEvent = (props) => {
 TimelineEvent.propTypes = {
   person: PropTypes.string.isRequired,
   timeStamp: PropTypes.string.isRequired,
-  status: PropTypes.string
+  status: PropTypes.string,
+  id: PropTypes.number.isRequired
 };
 
 export default TimelineEvent;

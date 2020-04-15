@@ -29,3 +29,16 @@
   text-align: right;
   color: #555759;
 }
+
+textarea {
+  width: 300px;
+  height: 30px;
+}
+
+
+@media screen and (max-width: 600px) {
+  textarea {
+    width: 100px;
+    height: 10px;
+  }
+}
