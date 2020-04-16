@@ -8,17 +8,6 @@ import TimelineEvent from './components/TimelineEvent';
 function App() {
   console.log(timelineData);
 
-  const myDict = [{
-    "person": "Adele Goldberg",
-    "status": "In Smalltalk, everything happens somewhere else.",
-    "timeStamp": "2018-05-18T22:12:03Z"
-  },
-  {
-    "person": "Erica Baker",
-    "status": "Every once in a while, life affords you the opportunity to have real, authentic, genuine happiness. It's up to you to see it. Pay attention.",
-    "timeStamp": "2018-05-18T22:19:40Z"
-  }];
-
   // Customize the code below
   return (
     <div className="App">
@@ -26,13 +15,7 @@ function App() {
         <h1 className="App-title">My Timeline</h1>
       </header>
       <main className="App-main">
-      <TimelineEvent
-          person={myDict[0].person}
-          status={myDict[0].status}
-          stamp={myDict[0].timeStamp}
-          key={myDict[0].timeStamp}
-        />
-        {/* <Timeline event={myDict}/> */}
+        <Timeline events={timelineData.events}/>
       </main>
     </div>
   );

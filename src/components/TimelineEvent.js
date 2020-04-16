@@ -10,10 +10,10 @@ const TimelineEvent = (props) => {
   const key = props.key;
 
   return(
-    <div className="TimelineEvent">
-      <h2>{person}</h2>
-      <article>{status}</article>
-      <Timestamp time={stamp}/>
+    <div className="timeline-event">
+      <h2 className="event-person">{person}</h2>
+      <article className="event-status">{status}</article>
+      <div className="event-time"><Timestamp time={stamp}/></div>
     </div>
   );
 }
