@@ -1,5 +1,5 @@
 import React from 'react';
-import logo from './logo.svg';
+// import logo from './logo.svg';
 import './App.css';
 import timelineData from './data/timeline.json';
 import Timeline from './components/Timeline';
@@ -23,10 +23,16 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <h1 className="App-title">Application title</h1>
+        <h1 className="App-title">My Timeline</h1>
       </header>
       <main className="App-main">
-        <TimelineEvent />
+      <TimelineEvent
+          person={myDict[0].person}
+          status={myDict[0].status}
+          stamp={myDict[0].timeStamp}
+          key={myDict[0].timeStamp}
+        />
+        {/* <Timeline event={myDict}/> */}
       </main>
     </div>
   );

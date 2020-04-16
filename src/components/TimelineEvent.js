@@ -4,11 +4,16 @@ import Timestamp from './Timestamp';
 
 const TimelineEvent = (props) => {
 
+  const person = props.person;
+  const status = props.status;
+  const stamp = props.timeStamp
+  const key = props.key;
+
   return(
     <div className="TimelineEvent">
-      <h1>{props.name}</h1>
-      <article>{props.message}</article>
-      <footer><Timestamp time={props.timestamp}/></footer>
+      <h2>{person}</h2>
+      <article>{status}</article>
+      <Timestamp time={stamp}/>
     </div>
   );
 }
