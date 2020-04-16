@@ -2,4 +2,5 @@
   width: 30%;
   margin: auto;
   text-align: left;
+  word-wrap: break-word;
 }
