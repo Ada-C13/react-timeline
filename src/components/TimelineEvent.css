@@ -1,7 +1,7 @@
 .timeline-event {
   display: grid;
   grid-template: 2rem auto 2rem / 1fr 1fr;
-  padding: 0.5rem;
+  padding: 0.8rem;
   border-bottom: 1px solid #E6ECF0;
   background-color: #FFF;
 }
@@ -17,11 +17,28 @@
 }
 
 .event-status {
+  padding-top: 20px;
   grid-area: 2 / 1 / span 1 / -1;
+  color: #555759;
+  word-wrap: break-word;
 }
 
 .event-time {
   grid-area: 1 / 2 / span 1 / span 1;
   margin-top: 0.5rem;
   text-align: right;
+  color: #555759;
+}
+
+textarea {
+  width: 300px;
+  height: 30px;
+}
+
+
+@media screen and (max-width: 600px) {
+  textarea {
+    width: 100px;
+    height: 10px;
+  }
 }
