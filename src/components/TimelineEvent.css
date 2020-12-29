@@ -12,12 +12,14 @@
 
 .event-person {
   grid-area: 1 / 1 / span 1 / span 1;
-  margin-top: 0.5rem;
+  margin-top: 0.6rem;
   font-weight: bolder;
 }
 
 .event-status {
+  word-wrap: break-word;
   grid-area: 2 / 1 / span 1 / -1;
+  max-width: 500px;
 }
 
 .event-time {
